@@ -1,2 +1,2 @@
-# NarvodyaWebsite
-This is an Educational Website 
+# Narvodaya Websites
+This is A Computer Training Website

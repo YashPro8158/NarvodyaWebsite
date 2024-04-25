@@ -1,0 +1,363 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --backblack: #2d3436;
+    --darkblue: #2c3e50;
+    --lightyellow: #fdcb6e;
+}
+
+.maincontainer {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    /* border: 1px solid var(--black); */
+}
+
+.maincontainer .tp-header {
+    position: fixed;
+    padding: 20px 0px;
+    width: 100%;
+    background-color: var(--backblack);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+    z-index: 100000;
+}
+
+.maincontainer .tp-header .logo a {
+    color: white;
+    font-size: 2rem;
+}
+
+.maincontainer .tp-header .logo a:hover {
+    cursor: pointer;
+    color: var(--lightyellow);
+    transition: all 0.3s ease-in-out;
+}
+.hamburger-narvodaya{
+    display: none;
+}
+
+.maincontainer .tp-header ul{
+    position: relative;
+}
+.maincontainer .tp-header ul li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.maincontainer .tp-header ul li a {
+    padding: 6px 12px;
+    /* border: 1px solid white; */
+    color: white;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    position: relative;
+}
+
+.maincontainer .tp-header ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 100%;
+    left: 0%;
+    background: var(--lightyellow);
+    transition: all 0.3s ease-in-out;
+}
+
+.maincontainer .tp-header ul li a:hover::after {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.maincontainer .tp-header .usrlst a {
+    padding: 6px 18px;
+    border: 1px solid transparent;
+    letter-spacing: 1px;
+    color: black;
+    background: var(--lightyellow);
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+}
+
+.maincontainer .tp-header .usrlst a:hover {
+    color: white;
+    background: black;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.maincontainer .tp-header ul li ul {
+    width: auto;
+    background-color: var(--backblack);
+    border-left: 2px solid var(--lightyellow);
+    position: absolute;
+    left: 34%;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out ;
+}
+.maincontainer .tp-header ul li ul li {
+    display: block;
+    padding: 12px 0px;
+}
+.maincontainer .tp-header ul li:hover ul {
+    transform: translateY(10px);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out ;
+}
+/* hero section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border: 1px solid black;
+    background-image: url('/NarvodyaWebsite/assets/img/mainback.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .overlay .hero-cont {
+    text-align: center;
+}
+
+.hero .overlay .hero-cont h1 {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0px 0px 30px;
+}
+
+.hero .overlay .hero-cont p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    line-height: 30px;
+}
+.hero .overlay .hero-cont button {
+    outline: none;
+    border: none;
+    position: relative;
+    font-size: 18px;
+    background: var(--lightyellow);
+    padding: 6px 16px;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out ;
+}
+.hero .overlay .hero-cont button:hover{
+    border: 2px solid white;
+    background: none;
+    color: white;
+    transition: all 0.3s ease-in-out ;
+}
+.heading {
+    text-align: center;
+    padding: 20px 0px;
+    color: #2c3e50;
+    display: grid;
+    place-items: center;
+}
+.heading h2{
+    width: 18%;
+    padding: 0px 0px 10px 0px;
+    border-bottom: 3px solid var(--lightyellow);
+}
+.topcourse {
+    width: 100%;
+    padding: 30px 0px;
+    height: auto;
+}
+.topcourse .tp-coursebox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+}
+.leftbox {
+    position: relative;
+    width: 30%;
+}
+.leftbox img {
+    /* position: absolute; */
+    width: 100%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+.rightbox{
+    position: relative;
+    width: 50%;
+} 
+.rightbox h2{
+    font-size: 23px;
+    padding: 20px 0px;
+}
+.rightbox p {
+    line-height: 32px;
+    font-family:sans-serif ;
+    text-align: justify;
+    padding: 10px 0px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.rightbox a {
+    padding: 5px 20px;
+    font-size: 17px;
+    background: var(--backblack);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.rightbox a:hover{
+    background: var(--lightyellow);
+    color: black;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.topcourse .viewbtn{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.topcourse .viewbtn a{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: var(--lightyellow);
+    color: black;
+    font-size: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.topcourse .viewbtn a:hover{
+    background: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Benifit Section */
+.benifits{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.benifits .left-bnimg{
+    position: relative;
+    padding: 10px;
+    width: 30%;
+    height: 90vh;
+    /* border: 1px solid black; */
+}
+.benifits .left-bnimg img{
+    position:absolute;
+    width: 100%;
+}
+.benifits .right-bncont{
+    width: 60%;
+    height: 100%;
+    padding: 10px 15px;
+}
+.benifits .right-bncont .top-bn h3{
+    font-size: 0.8em;
+    color: var(--lightyellow);
+}
+.benifits .right-bncont .top-bn h2{
+    font-size: 3em;
+    color: white;
+    width: 90%;
+    padding: 20px 0px;
+    line-height: 60px;
+}
+.benifits .right-bncont .benefit-list ul li {
+    width: 80%;
+    border: 1px solid var(--lightyellow);
+    padding: 1.8em 20px;
+    margin:10px 0px ;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.benifits .right-bncont .benefit-list ul li h2{
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.benifits .right-bncont .benefit-list ul li p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 30px;
+}
+
+.benifits .right-bncont .benefit-list ul li:hover{
+    background-color: var(--lightyellow);
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.benifits .right-bncont .benefit-list ul li:hover p {
+    color: black;
+}
+
+/* counter success */
+.counter-success{
+    margin: 40px 0px;
+    width: 100%;
+    height: 50vh;
+    
+    background-image: url('/NarvodyaWebsite/assets/img/counting-success.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.counter-success .overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.counter-success ul li {
+    display: inline-block;
+    color: white;
+}
+.counter-success ul li .counting{
+    font-size: 2.8em;
+}
+
+.counter-success ul li i {
+    font-size: 2.8em;
+}
+.counter-success ul li .countpara{
+    font-size: 1.2em;
+}

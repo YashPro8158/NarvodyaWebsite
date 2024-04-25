@@ -1,0 +1,123 @@
+/* 320px — 480px: Mobile devices. 481px — 768px: iPads, Tablets. 769px — 1024px: Small screens, laptops. 1025px — 1200px: Desktops, large screens */
+
+/* mobile Device  */
+@media screen and (max-width:768px) {
+    .tp-header .mdl-lst {
+        width: 30%;
+        position: fixed;
+        left: -100%;
+        top: 20%;
+        height: 60vh;
+        background-color: #2d3436;
+        transition: all 0.3s ease-in-out;
+    }
+    .tp-header .mdl-lst.activemiddlelist{
+        left: 0%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .tp-header .mdl-lst ul {
+        position: relative;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .tp-header .mdl-lst ul>li {
+        display: block;
+    }
+
+    .tp-header .mdl-lst ul li .crslist {
+        width: 100px;
+        left: 100%;       
+         top: -10px;
+    }
+
+    .fullform {
+        display: none;
+    }
+
+    .maincontainer .tp-header .logo a {
+        font-size: 1.2em;
+    }
+
+    .hamburger-narvodaya {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger-narvodaya .burger {
+        width: 90%;
+        margin: 0px auto;
+        height: 2px;
+        background-color: #fdcb6e;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .hero .overlay .hero-cont h1 {
+        font-size: 2em;
+    }
+    .hero .overlay .hero-cont button {
+        font-size: 18px;
+        border-radius: 0px;
+    }
+    .topcourse .tp-coursebox{
+        flex-direction: column;
+    }
+    .leftbox {
+        width: 90%;
+    }
+    .leftbox img {
+        margin: 20px 0px;
+    }
+    .rightbox{
+        width: 90%;
+    }
+    .heading h2{
+        width: 52%
+    }
+    
+    .benifits {
+        flex-direction: column;
+    }
+    .benifits .left-bnimg{
+        width: 90%;
+        height: 50vh;
+    }
+    .benifits .left-bnimg img{
+        height: 100%;
+    }
+    .benifits .right-bncont {
+        width: 90%;
+    }
+    .benifits .right-bncont .top-bn h2{
+        line-height: 25px;
+        font-size: 1.5em;
+    }
+    .benifits .right-bncont .benefit-list ul li{
+        width: 100%;
+    }
+    .benifits .right-bncont .benefit-list ul li p{
+        text-align: justify;
+    }
+    .counter-success .overlay{
+        flex-direction: column;
+    }
+    .counter-success ul li .counting{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:768px){
+    
+    .maincontainer .tp-header .logo a {
+        font-size: 2em;
+    }
+}
